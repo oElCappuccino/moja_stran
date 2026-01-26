@@ -42,6 +42,9 @@ switch ($naloga) {
 <html lang="en">
 
 <head>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@300;400;600&family=Playfair+Display:wght@400;700&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="style.css">
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -56,12 +59,12 @@ switch ($naloga) {
 
     <nav>
         <ul class="nav-bar">
-            <li><a class="<?php echo $naloga === 'home' ? 'active' : ''; ?>" href="index.php">Home</a></li>
-            <li><a class="<?php echo $naloga === 'news' ? 'active' : ''; ?>" href="?naloga=news">Latest News</a></li>
-            <li><a class="<?php echo $naloga === 'services' ? 'active' : ''; ?>" href="?naloga=services">Services</a></li>
-            <li><a class="<?php echo $naloga === 'mission' ? 'active' : ''; ?>" href="?naloga=mission">Our Mission</a></li>
-            <li><a class="<?php echo $naloga === 'gallery' ? 'active' : ''; ?>" href="?naloga=gallery">Gallery</a></li>
-            <li><a class="<?php echo $naloga === 'contact' ? 'active' : ''; ?>" href="?naloga=contact">Follow Us</a></li>
+            <li><a class="<?php echo $naloga === 'home' ? 'active' : ''; ?>" href="index.php">Domov</a></li>
+            <li><a class="<?php echo $naloga === 'news' ? 'active' : ''; ?>" href="?naloga=news">Novice</a></li>
+            <li><a class="<?php echo $naloga === 'services' ? 'active' : ''; ?>" href="?naloga=services">Storitve</a></li>
+            <li><a class="<?php echo $naloga === 'mission' ? 'active' : ''; ?>" href="?naloga=mission">O nas</a></li>
+            <li><a class="<?php echo $naloga === 'gallery' ? 'active' : ''; ?>" href="?naloga=gallery">Galerija</a></li>
+            <li><a class="<?php echo $naloga === 'contact' ? 'active' : ''; ?>" href="?naloga=contact">Sledite nam</a></li>
         </ul>
     </nav>
 
@@ -71,9 +74,9 @@ switch ($naloga) {
         if ($partial_file && file_exists($partial_file)) {
             include $partial_file;
         } else if ($naloga === 'contact') {
-            echo '<section class="section-contact"><h1>FOLLOW US</h1><div class="placeholder-box">Social Media Links Coming Soon</div></section>';
+            echo '<section class="section-contact"><h1>SLEDITE NAM</h1><div class="placeholder-box">Povezave do družbenih omrežij kmalu na voljo</div></section>';
         } else {
-            echo '<p>Page not found.</p>';
+            echo '<p>Stran ni bila najdena.</p>';
         }
         ?>
     </main>
@@ -81,22 +84,22 @@ switch ($naloga) {
 
     <footer>
         <div class="footer-column">
-            <h3>Explore</h3>
+            <h3>Raziskuj</h3>
             <ul>
-                <li><a href="?naloga=news">Latest News</a></li>
-                <li><a href="?naloga=services">Services</a></li>
+                <li><a href="?naloga=news">Novice</a></li>
+                <li><a href="?naloga=services">Storitve</a></li>
             </ul>
         </div>
         <div class="footer-column">
-            <h3>Company</h3>
+            <h3>Podjetje</h3>
             <ul>
-                <li><a href="?naloga=mission">Our Mission</a></li>
+                <li><a href="?naloga=mission">O nas</a></li>
             </ul>
         </div>
         <div class="footer-column">
-            <h3>Connect</h3>
+            <h3>Poveži se</h3>
             <ul>
-                <li><a href="?naloga=contact">Follow Us</a></li>
+                <li><a href="?naloga=contact">Sledite nam</a></li>
             </ul>
         </div>
     </footer>

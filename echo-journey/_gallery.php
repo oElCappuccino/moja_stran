@@ -4,6 +4,6 @@ if (!defined('varovalka')) {
 }
 ?>
 <section id="gallery" class="section-gallery">
-    <h1>GALLERY</h1>
-    <div class="placeholder-box">Gallery Content Coming Soon (Dynamic Content Feature)</div>
+    <h1>GALERIJA</h1>
+    <div class="placeholder-box">Vsebina galerije kmalu na voljo</div>
 </section>

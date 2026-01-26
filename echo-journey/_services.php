@@ -4,7 +4,7 @@ if (!defined('varovalka')) {
 }
 ?>
 <section id="services" class="section-services">
-    <h1>SERVICES</h1>
+    <h1>STORITVE</h1>
     <div id="book-now-container">
         <?php foreach ($services as $service) : ?>
             <article>
@@ -12,7 +12,7 @@ if (!defined('varovalka')) {
                 <p><strong><?php echo $service['title']; ?></strong></p>
                 <p><?php echo $service['description']; ?></p>
                 <hr>
-                <button>Book Now</button>
+                <button>Rezerviraj zdaj</button>
             </article>
         <?php endforeach; ?>
     </div>

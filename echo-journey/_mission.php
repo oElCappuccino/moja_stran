@@ -7,12 +7,12 @@ if (!defined('varovalka')) {
     <h1><?php echo strtoupper($mission_data['title']); ?></h1>
     <div class="mission-container">
         <div class="mission-left">
-            <h2>WHO WE ARE</h2>
+            <h2>KDO SMO</h2>
             <p><?php echo $mission_data['content']; ?></p>
-            <button>Read More</button>
+            <button>Preberite več</button>
         </div>
         <div class="mission-right">
-            <img src="<?php echo $mission_data['image']; ?>" alt="Mission Image">
+            <img src="<?php echo $mission_data['image']; ?>" alt="Slika misije">
         </div>
     </div>
 </section>
